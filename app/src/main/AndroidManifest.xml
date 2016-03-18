@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.toocms.fresh">
+
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:name="com.toocms.frame.config.WeApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.CustomActionBar.Fresh">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".index.promotion.PromotionActiy" />
+        <activity android:name=".index.hotsell.HotSellActiy" />
+        <activity android:name=".index.recharge.RechargeActiy" />
+        <activity android:name=".index.gooddetail.ShoppingDetailActiy" />
+        <activity android:name=".index.goodlist.GoodListActiy" />
+        <activity android:name=".index.search.SearchActiy" />
+        <activity android:name=".mine.login.LoginActiy" />
+        <activity android:name=".mine.regist.RegistFirstStepAty" />
+        <activity android:name=".mine.regist.RegistSecondStepAty" />
+        <activity android:name=".mine.login.SetNewPasswordAty" />
+        <activity android:name=".mine.setting.SettingAty" />
+        <activity android:name=".mine.setting.AboutMeAty" />
+        <activity android:name=".index.recharge.PayActiy" />
+        <activity android:name=".mine.order.MyOrderAty" />
+        <activity android:name=".mine.wallet.MyWalletAty" />
+        <activity android:name=".mine.collection.MyCollectionActiy" />
+        <activity android:name=".mine.coupon.MyCouponAty" />
+        <activity android:name=".mine.feedback.FeedBackAty" />
+        <activity android:name=".mine.address.AddressAty" />
+        <activity android:name=".mine.address.AddressDetailAty" />
+        <activity android:name=".mine.order.OrderDetailsAty" />
+        <activity android:name=".mine.usercenter.UserCenterActiy" />
+        <activity android:name=".index.message.MessageAty" />
+        <activity android:name=".index.message.MessageDetailAty" />
+        <activity android:name=".mine.usercenter.NickNameUpdateActiy" />
+        <activity android:name="com.toocms.dialog.UITableActiy" />
+        <activity android:name=".recycleview.RecycleViewAty"/>
+
+        <activity android:name=".mine.address.BaiMapAty" />
+
+
+        <!--百度地图-->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="QdIc8Toe0qjkUVDZ3rv6sx5b" />
+
+        <!--<service-->
+            <!--android:name="com.baidu.location.f"-->
+            <!--android:enabled="true"-->
+            <!--android:process=":remote"></service>-->
+
+
+    </application>
+
+</manifest>

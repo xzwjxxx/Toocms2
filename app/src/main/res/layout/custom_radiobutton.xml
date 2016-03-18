@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/x10"
+    android:layout_marginRight="@dimen/x10">
+
+    <RadioButton
+        android:id="@+id/radiobutton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y70"
+        android:button="@drawable/weixin_pay"
+        android:drawableRight="@drawable/radio_button_checked"
+        android:paddingLeft="@dimen/x20"
+        android:text="微信支付" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/radiobutton"
+        android:background="#cccccc" />
+
+
+</RelativeLayout>

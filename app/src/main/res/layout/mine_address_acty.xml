@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f5f5f5">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x70"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/x70"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/normal_white_pressed_gray"
+            android:padding="@dimen/x20"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="收货地址"
+            android:textSize="@dimen/x25" />
+
+        <TextView
+            android:id="@+id/mine_feedback_submit"
+            android:layout_width="@dimen/x70"
+            android:layout_height="match_parent"
+            android:text="添加"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textSize="@dimen/x20"
+            android:background="@drawable/normal_white_pressed_gray"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y2"
+        android:background="#cccccc"/>
+
+
+    <cn.zero.android.common.view.pulltorefresh.PullToRefreshSwipeMenuListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/transparent"
+        android:dividerHeight="@dimen/y15"
+        ptr:ptrMode="both">
+
+    </cn.zero.android.common.view.pulltorefresh.PullToRefreshSwipeMenuListView>
+
+    <LinearLayout
+        android:id="@android:id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/y5"
+            android:drawableTop="@drawable/ic_address_empty"
+            android:gravity="center"
+            android:text="还没有收货地址哦"
+            android:textColor="#4d4d4d"
+            android:textSize="@dimen/x22" />
+    </LinearLayout>
+
+
+</LinearLayout>

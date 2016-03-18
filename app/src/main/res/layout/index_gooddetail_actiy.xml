@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.toocms.view.ObservableScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x400"
+                android:src="@drawable/index_recommend_image" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/shopping_detail_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_margin="20dp"
+                        android:maxLines="2"
+                        android:text="No matter the ending is perfect or not, you cannot disappear from my world." />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/shopping_detail_title"
+                        android:orientation="horizontal"
+                        android:padding="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Y100" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/x20"
+                            android:text="Y100"
+                            android:textSize="22px" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#666666" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y60"
+                android:layout_marginLeft="@dimen/x20"
+                android:gravity="center_vertical"
+                android:text="规格参数：" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F5F5F5"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="@dimen/x160"
+                        android:layout_height="1dp"
+                        android:background="#dbdbdb" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/x25"
+                        android:text="图文详情" />
+
+                    <View
+                        android:layout_width="@dimen/x160"
+                        android:layout_height="1dp"
+                        android:background="#dbdbdb" />
+                </LinearLayout>
+
+                <WebView
+                    android:id="@+id/shopping_detail_webview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </com.toocms.view.ObservableScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y80"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/commodity_detail_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/normal_white_pressed_gray"
+            android:paddingLeft="@dimen/x25"
+            android:paddingRight="@dimen/x25"
+            android:src="@drawable/menu_cart" />
+
+        <ImageButton
+            android:id="@+id/commodity_detail_reduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x25"
+            android:background="@color/transparent"
+            android:src="@drawable/selector_btn_reduce" />
+
+        <TextView
+            android:id="@+id/commodity_detail_num"
+            android:layout_width="@dimen/x66"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#ff9c00"
+            android:textSize="@dimen/x18" />
+
+        <ImageButton
+            android:id="@+id/commodity_detail_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:src="@drawable/selector_btn_plus" />
+
+        <View style="@style/weight" />
+
+        <cn.zero.android.common.view.FButton
+            android:id="@+id/commodity_detail_addcart"
+            android:layout_width="@dimen/x160"
+            android:layout_height="@dimen/y50"
+            android:layout_marginRight="@dimen/x25"
+            android:gravity="center"
+            android:text="加入购物车"
+            android:textColor="@color/white"
+            app:buttonColor="#ff9c00"
+            app:cornerRadius="3dp"
+            app:shadowEnabled="false" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x70"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/x70"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/normal_white_pressed_gray"
+            android:padding="@dimen/x20"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="收银台"
+            android:textSize="@dimen/x25" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="20dp"
+        android:background="#cccccc" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+    <RadioGroup
+        android:id="@+id/pay_methods_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/x20"
+        android:paddingRight="@dimen/x20">
+
+
+        <RadioButton
+            android:id="@+id/weixin_pay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y70"
+            android:button="@drawable/weixin_pay"
+            android:text="微信支付"
+            android:paddingLeft="@dimen/x20"
+            android:drawableRight="@drawable/radio_button_checked"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#cccccc" />
+        <RadioButton
+            android:id="@+id/zhifubao_pay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y70"
+            android:button="@drawable/zhifubao_pay"
+            android:text="支付宝支付"
+            android:paddingLeft="@dimen/x20"
+            android:drawableRight="@drawable/radio_button_checked"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#cccccc" />
+
+        <RadioButton
+            android:id="@+id/yinlian_pay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y70"
+            android:button="@drawable/yinlian_pay"
+            android:text="银联支付"
+            android:paddingLeft="@dimen/x20"
+            android:drawableRight="@drawable/radio_button_checked"/>
+
+    </RadioGroup>
+
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y80"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="@dimen/x30"
+        android:paddingRight="@dimen/x30">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="支付:"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/index_pay_number"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1000"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x10"
+            android:textSize="@dimen/x20"
+            android:textColor="#f46a04"
+            android:layout_weight="1"/>
+
+
+        <cn.zero.android.common.view.FButton
+            android:id="@+id/recharge_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="付款"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x22"
+            app:buttonColor="#f46a04"
+            app:cornerRadius="5dp"
+            app:shadowEnabled="false"/>
+
+    </LinearLayout>
+
+</LinearLayout>

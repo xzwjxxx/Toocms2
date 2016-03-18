@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y42"
+        android:text="￥20"
+        android:gravity="center"
+        android:textSize="@dimen/x18"
+        android:textColor="#808080"
+        android:background="@drawable/index_rechargemoney_shapebg"/>
+
+
+</LinearLayout>

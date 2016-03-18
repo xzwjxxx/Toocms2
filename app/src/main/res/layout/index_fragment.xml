@@ -1,0 +1,175 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1">
+
+
+    <com.toocms.view.MonitorScrollView
+        android:id="@+id/index_custom_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <cn.zero.android.common.view.banner.SliderBanner
+                android:id="@+id/index_banner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y260"
+                app:slider_banner_indicator="@+id/dotview"
+                app:slider_banner_pager="@+id/viewpager"
+                app:slider_banner_time_interval="8000">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </android.support.v4.view.ViewPager>
+
+                <cn.zero.android.common.view.banner.DotView
+                    android:id="@+id/dotview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/y10"
+                    android:gravity="center"
+                    app:dot_radius="5dp"
+                    app:dot_selected_color="#ffffff"
+                    app:dot_span="@dimen/x6"
+                    app:dot_unselected_color="#75979e">
+
+                </cn.zero.android.common.view.banner.DotView>
+
+            </cn.zero.android.common.view.banner.SliderBanner>
+
+            <cn.zero.android.common.view.linearlistview.LinearListView
+                android:id="@+id/index_lv_navigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            </cn.zero.android.common.view.linearlistview.LinearListView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y15"
+                android:background="#F5F5F5" />
+
+
+            <cn.zero.android.common.view.linearlistview.LinearListView
+                android:id="@+id/index_center_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y15"
+                android:divider="#F5F5F5"
+                android:orientation="vertical"
+                android:showDividers="middle|beginning|end|none"
+                app:dividerThickness="2dp">
+
+            </cn.zero.android.common.view.linearlistview.LinearListView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/y30">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/x20"
+                    android:paddingRight="@dimen/x20"
+                    android:paddingTop="@dimen/y30">
+
+                    <View
+                        android:layout_width="@dimen/x170"
+                        android:layout_height="1dp"
+                        android:background="#DBDBDB" />
+
+                    <View style="@style/weight" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/index_recommend" />
+
+                    <View style="@style/weight" />
+
+                    <View
+                        android:layout_width="@dimen/x170"
+                        android:layout_height="1dp"
+                        android:background="#DBDBDB" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y15"
+                    android:text="为您推荐"
+                    android:textColor="#808080"
+                    android:textSize="@dimen/x16" />
+            </LinearLayout>
+
+            <cn.zero.android.common.view.blocklistview.BlockListView
+                android:id="@+id/index_recommend_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/x10"
+                android:paddingLeft="@dimen/x10"
+                android:paddingRight="@dimen/x10">
+
+            </cn.zero.android.common.view.blocklistview.BlockListView>
+
+        </LinearLayout>
+
+
+    </com.toocms.view.MonitorScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/index_toobar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y70"
+        android:background="#7FB804"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:src="@drawable/index_logo" />
+
+
+        <TextView
+            android:id="@+id/index_search"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y40"
+            android:layout_marginLeft="@dimen/x7"
+            android:layout_weight="1"
+            android:background="@drawable/index_shape_search_bg"
+            android:drawableLeft="@drawable/index_search_image"
+            android:drawablePadding="@dimen/x10"
+            android:hint="请输入商品名称"
+            android:padding="@dimen/x10"
+            android:textSize="@dimen/x18" />
+
+        <ImageButton
+            android:id="@+id/index_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/normal_transparent_pressed_other"
+            android:padding="@dimen/x20"
+            android:src="@drawable/index_message_icon" />
+
+
+    </LinearLayout>
+
+</FrameLayout>

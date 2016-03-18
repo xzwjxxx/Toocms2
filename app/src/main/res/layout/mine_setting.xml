@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x70"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/x70"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/normal_white_pressed_gray"
+            android:padding="@dimen/x20"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="系统设置"
+            android:textSize="@dimen/x25" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc" />
+
+    <LinearLayout
+        android:id="@+id/mine_setting_connection_me"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y70"
+        android:layout_marginTop="@dimen/y15"
+        android:background="@drawable/normal_white_pressed_gray"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/x20"
+        android:paddingRight="@dimen/x20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="联系客服"
+            android:textColor="#333333" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="18393358049"
+                android:textColor="#72c63c"
+                android:textSize="@dimen/x16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="xx:xx-xx:xx"
+                android:textColor="#999999"
+                android:textSize="@dimen/x16" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/y15"
+        android:background="#ffffff">
+
+        <com.toocms.view.LinearLayoutItem
+            android:id="@+id/mine_setting_clear_buffer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.toocms.view.LinearLayoutItem>
+
+
+
+        <com.toocms.view.LinearLayoutItem
+            android:id="@+id/mine_setting_user_help"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.toocms.view.LinearLayoutItem>
+
+
+        <com.toocms.view.LinearLayoutItem
+            android:id="@+id/mine_setting_about_me"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.toocms.view.LinearLayoutItem>
+
+    </LinearLayout>
+
+    <cn.zero.android.common.view.FButton
+        android:id="@+id/fbtn_login_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_marginTop="@dimen/y50"
+        android:text="退出登录"
+        android:textColor="@color/white"
+        android:textSize="@dimen/x22"
+        app:buttonColor="#72C63C"
+        app:cornerRadius="5dp"
+        app:shadowEnabled="false" />
+
+</LinearLayout>

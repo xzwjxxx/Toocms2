@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="NewApi">
+
+    <style name="AppTheme.CustomActionBar.Fresh" parent="AppTheme.CustomActionBar.White">
+        <item name="android:actionBarStyle">@style/CustomActionBar.Fresh</item>
+        <item name="actionBarStyle">@style/CustomActionBar.Fresh</item>
+        <item name="android:actionMenuTextAppearance">@style/CustomActionBar.MenuTextStyle.Fresh
+        </item>
+        <item name="actionMenuTextAppearance">@style/CustomActionBar.MenuTextStyle.Fresh</item>
+        <item name="android:actionMenuTextColor">@color/action_menu_text</item>
+        <item name="actionMenuTextColor">@color/action_menu_text</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_back</item>
+        <item name="homeAsUpIndicator">@drawable/ic_back</item>
+    </style>
+
+    <style name="CustomActionBar.Fresh" parent="CustomActionBar.White">
+        <!-- 背景色 -->
+        <item name="android:background">@color/action_bg</item>
+        <!-- 标题的文字样式 -->
+        <item name="android:titleTextStyle">@style/CustomActionBar.TitleTextStyle.Fresh</item>
+        <!-- 背景色 -->
+        <item name="background">@color/action_bg</item>
+        <!-- 标题的文字样式 -->
+        <item name="titleTextStyle">@style/CustomActionBar.TitleTextStyle.Fresh</item>
+    </style>
+
+    <style name="CustomActionBar.TitleTextStyle.Fresh" parent="CustomActionBar.TitleTextStyle.White">
+        <item name="android:textColor">@color/action_text</item>
+    </style>
+
+    <style name="CustomActionBar.MenuTextStyle.Fresh" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu">
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>

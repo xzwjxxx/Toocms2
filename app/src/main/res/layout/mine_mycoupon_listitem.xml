@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y110"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_marginTop="@dimen/y20"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_coupon_left"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="¥"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/x22" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="10"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/x50" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/x10">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="抵用券"
+                android:textColor="#333333"
+                android:textSize="@dimen/x22" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="满xx可用"
+                android:textColor="#999999"
+                android:textSize="@dimen/x14" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="过期时间"
+                android:textColor="#999999"
+                android:textSize="@dimen/x14" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

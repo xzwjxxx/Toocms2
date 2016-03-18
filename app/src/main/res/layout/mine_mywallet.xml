@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y150"
+        android:background="@drawable/bg_wallet"
+        android:paddingLeft="@dimen/x25"
+        android:paddingRight="@dimen/x25">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_wallet_left" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="账户余额"
+                android:textColor="#333333"
+                android:textSize="@dimen/x22" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y15"
+                android:text="100元"
+                android:textColor="#ff9c00"
+                android:textSize="@dimen/x22" />
+        </LinearLayout>
+
+        <com.toocms.view.DrawableLeftCenterTextView
+            android:id="@+id/mine_wallet_recharge"
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/y48"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_wallet_recharge"
+            android:drawableLeft="@drawable/flag_recharge"
+            android:drawablePadding="@dimen/x10"
+            android:gravity="center_vertical"
+            android:text="充值"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+    <View
+        style="@style/divider"
+        android:background="#cccccc" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y50"
+        android:drawableLeft="@drawable/flag_wallet_financial_details"
+        android:drawablePadding="@dimen/x15"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/x20"
+        android:text="资金明细"
+        android:textColor="#333333"
+        android:textSize="@dimen/x18" />
+    <View
+        style="@style/divider"
+        android:background="#cccccc" />
+
+    <ListView
+        android:id="@android:id/list"
+        style="@style/style_normal_listview"
+        android:scrollbars="none">
+
+    </ListView>
+
+</LinearLayout>

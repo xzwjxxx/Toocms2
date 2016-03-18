@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y70"
+        android:background="@drawable/normal_white_pressed_gray"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/x20"
+        android:paddingRight="@dimen/x20"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/uitab_item_leftimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/x15"/>
+
+        <TextView
+            android:id="@+id/uitab_item_lefttitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="联系客服"
+            android:textColor="#333333" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/uitab_item_righttitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="18393358049"
+                android:textColor="#72c63c"
+                android:textSize="@dimen/x16"/>
+
+            <ImageView
+                android:id="@+id/uitab_item_rightimage"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc"
+        android:layout_below="@id/ll"/>
+
+</LinearLayout>

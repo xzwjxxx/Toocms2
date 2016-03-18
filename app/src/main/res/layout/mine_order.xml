@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f1f1f1">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x70"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/x70"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/normal_white_pressed_gray"
+            android:padding="@dimen/x20"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的订单"
+            android:textSize="@dimen/x25" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc" />
+
+    <LinearLayout
+        android:id="@+id/myorder_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/myorder_whole"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/y60"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="全部"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/myorder_no_pay"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/y60"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="代付款"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/myorder_payying"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/y60"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="待发货"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/myorder_payfinish"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/y60"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="待收货"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/myorder_paycancle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/y60"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="待收货"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cursor"
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:background="#990033" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+</LinearLayout>

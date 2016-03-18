@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/index_toobar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y70"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/x70"
+            android:layout_height="@dimen/y70"
+            android:background="@drawable/normal_white_pressed_gray"
+            android:src="@drawable/ic_back"
+            android:padding="@dimen/x20"/>
+
+
+        <TextView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y40"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_weight="1"
+            android:background="@drawable/index_search_shapebg"
+            android:drawableLeft="@drawable/index_search_image"
+            android:drawablePadding="@dimen/x10"
+            android:hint="请输入商品名称"
+            android:paddingTop="@dimen/y10"
+            android:paddingBottom="@dimen/y10"
+            android:textSize="@dimen/x18"
+            android:paddingLeft="@dimen/x20"/>
+
+        <ImageButton
+            android:id="@+id/index_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/normal_white_pressed_gray"
+            android:padding="@dimen/x20"
+            android:src="@drawable/menu_cart" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x60"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/index_goodacty_all"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="全部" />
+
+        <View
+            android:layout_width="@dimen/x1"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/y20"
+            android:layout_marginTop="@dimen/y20"
+            android:background="#cccccc" />
+
+        <TextView
+            android:id="@+id/index_goodacty_cuxiao"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="促销" />
+
+
+        <View
+            android:layout_width="@dimen/x1"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/y20"
+            android:layout_marginTop="@dimen/y20"
+            android:background="#cccccc" />
+
+        <LinearLayout
+            android:id="@+id/index_goodacty_xiaoliang_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/index_goodacty_xiaoliang_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="销量" />
+
+            <ImageView
+                android:id="@+id/index_goodacty_xiaoliang_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x10"
+                android:src="@drawable/xiaoliang_down" />
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="@dimen/x1"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/y20"
+            android:layout_marginTop="@dimen/y20"
+            android:background="#666666" />
+
+        <LinearLayout
+            android:id="@+id/index_goodacty_price_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/index_goodacty_price_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="价格" />
+
+            <ImageView
+                android:id="@+id/index_goodacty_price_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x10"
+                android:src="@drawable/xiaoliang_down" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/index_goodacty_line"
+        android:layout_width="@dimen/x80"
+        android:layout_height="2dp"
+        android:background="#7fb804" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc" />
+
+    <include layout="@layout/index_promotion_actiy" />
+
+</LinearLayout>

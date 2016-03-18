@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f5f5f5">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x70"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/x70"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/normal_white_pressed_gray"
+            android:padding="@dimen/x20"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="意见反馈"
+            android:textSize="@dimen/x25" />
+
+        <TextView
+            android:id="@+id/mine_feedback_submit"
+            android:layout_width="@dimen/x70"
+            android:layout_height="match_parent"
+            android:text="确定"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textSize="@dimen/x25"
+            android:background="@drawable/normal_white_pressed_gray"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y2"
+        android:background="#cccccc"/>
+
+    <EditText
+        android:layout_width="@dimen/x442"
+        android:layout_height="@dimen/y142"
+        android:background="@drawable/mine_freedback_shapebg"
+        android:layout_marginTop="@dimen/y20"
+        android:hint="请尽量详细描述反馈，我们会第一时间帮您解决"
+        android:textSize="@dimen/x18"
+        android:textColor="#cccccc"
+        android:layout_gravity="center_horizontal"
+        android:gravity="top"
+        android:padding="@dimen/x10"/>
+
+
+    <EditText
+        android:layout_width="@dimen/x442"
+        android:layout_height="@dimen/y62"
+        android:background="@drawable/mine_freedback_shapebg"
+        android:layout_marginTop="@dimen/y20"
+        android:hint="请留下您的手机号"
+        android:textSize="@dimen/x18"
+        android:textColor="#cccccc"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:padding="@dimen/x10"/>
+
+
+</LinearLayout>

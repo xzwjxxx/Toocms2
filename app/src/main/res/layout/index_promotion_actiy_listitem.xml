@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/normal_white_pressed_gray"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y122"
+        android:gravity="center_vertical"
+        android:padding="@dimen/x15">
+
+        <ImageView
+            android:id="@+id/promotion_image"
+            android:layout_width="@dimen/x96"
+            android:layout_height="@dimen/y96"
+            android:src="@drawable/index_recommend_image" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/x16">
+
+            <TextView
+                android:id="@+id/promotion_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="新西兰有机红苹果"
+                android:textSize="@dimen/x18"
+                android:textColor="#666666"/>
+
+            <TextView
+                android:id="@+id/promotion_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:text="250g"
+                android:textSize="@dimen/x16"
+                android:textColor="#999999"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/promotion_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="¥17.80"
+                    android:textSize="@dimen/x22"
+                    android:textColor="#f46a04"/>
+
+                <TextView
+                    android:id="@+id/promotion_old_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x16"
+                    android:text="¥18.00"
+                    android:textColor="#b3b3b3"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"/>
+
+                <ImageButton
+                    android:id="@+id/promotion_car"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/menu_cart"
+                    android:background="@color/transparent"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        style="@style/divider"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginRight="@dimen/x15"
+        android:background="#dbdbdb" />
+
+</LinearLayout>

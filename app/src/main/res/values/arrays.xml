@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="main_tabs_ids">
+        <item>tab_index</item>
+        <item>tab_classfy</item>
+        <item>tab_shopping_car</item>
+        <item>tab_mine</item>
+    </string-array>
+
+
+    <string-array name="main_tabs_icons_normal">
+        <item>tab_main_bottom_index_normal</item>
+        <item>tab_main_bottom_classification_normal</item>
+        <item>tab_main_bottom_cart_normal</item>
+        <item>tab_main_bottom_mine_normal</item>
+    </string-array>
+
+    <string-array name="main_tabs_icons_checked">
+        <item>tab_main_bottom_index_checked</item>
+        <item>tab_main_bottom_classification_checked</item>
+        <item>tab_main_bottom_cart_checked</item>
+        <item>tab_main_bottom_mine_checked</item>
+    </string-array>
+
+    <string-array name="index_navigation_text">
+        <item>促销</item>
+        <item>热销排行</item>
+        <item>充值</item>
+        <item>全部分类</item>
+    </string-array>
+
+    <string-array name="index_navigation_logo">
+        <item>index_cuxiao</item>
+        <item>index_selling_hot</item>
+        <item>index_chongzhi</item>
+        <item>index_classify</item>
+    </string-array>
+
+
+    <string-array name="goodlist_tabs_ids">
+        <item>index_goodacty_all</item>
+        <item>index_goodacty_cuxiao</item>
+        <item>index_goodacty_xiaoliang_text</item>
+        <item>index_goodacty_price_text</item>
+    </string-array>
+
+
+</resources>
